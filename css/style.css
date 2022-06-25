@@ -10,6 +10,7 @@
   --often-color: #757575;
   /* bg-colors */
   --hero-color: #2f303a;
+  --icon-bgc: #f5f4fa;
   /* others */
 }
 
@@ -276,6 +277,7 @@ img {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--often-color);
+  margin-bottom: 10px;
 }
 
 .about-list {
@@ -290,8 +292,17 @@ img {
 .about-items {
   width: calc(100% / 4 - 30px);
   margin: 15px;
-
   justify-content: center;
+  width: 270;
+}
+
+.about-icon {
+  display: flex;
+  min-width: 270px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--icon-bgc);
+  margin-bottom: 30px;
 }
 
 /* what we do */
@@ -418,11 +429,6 @@ img {
   margin: 0%;
 }
 
-.about-icon {
-  justify-content: center;
-  align-items: center;
-}
-
 /* Clients section */
 
 .clients {
@@ -456,6 +462,10 @@ img {
 
 .clients-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.clients-link {
+  color: #afb1bb;
 }
 
 /* footer */
@@ -509,4 +519,14 @@ img {
 .footer {
   background-color: var(--hero-color);
   padding: 60px 0px;
+}
+
+.follow-footer-list {
+  display: flex;
+  justify-content: center;
+}
+
+.follow-name {
+  text-transform: uppercase;
+  color: var(--white-color);
 }
