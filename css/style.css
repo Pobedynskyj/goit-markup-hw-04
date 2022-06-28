@@ -168,6 +168,10 @@ img {
   color: var(--accent-color);
 }
 
+.link-cnt:hover svg {
+  fill: var(--accent-color);
+}
+
 /* Header Portfolio */
 /* portfolio buttons */
 .prt-buttons > .list {
@@ -309,13 +313,14 @@ img {
   width: 270;
 }
 
-.about-icon {
+.about-svg {
   display: flex;
-  min-width: 270px;
+  height: 120px;
   justify-content: center;
   align-items: center;
   background-color: var(--icon-bgc);
   margin-bottom: 30px;
+  border-radius: 4px;
 }
 
 /* what we do */
@@ -439,20 +444,24 @@ img {
   display: flex;
   justify-content: space-evenly;
   padding-left: 0;
-  margin: 0%;
+  margin: 0;
 }
 
-.social-icon {
+.icon-cnt {
+  margin-right: 10px;
+}
+
+.social-link {
+  display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  /* width: 44px;
-  height: 44px; */
-  border-radius: 50%;
+  width: 44px;
+  height: 44px;
   fill: #afb1b8;
 }
 
-.social-icon:hover {
+.social-link:hover {
   align-items: center;
   box-sizing: border-box;
   border-radius: 50%;
@@ -484,7 +493,7 @@ img {
   box-sizing: border-box;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  width: 170px;
+  width: calc(100% / 6 - 30px);
   height: 92px;
   display: flex;
   justify-content: center;
